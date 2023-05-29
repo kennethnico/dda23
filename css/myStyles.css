@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Satisfy&display=swap');
+.font_Source{
+    font-family: "Source Sans Pro", Arial, sans-serif!important;
+}
+.font_Lato{
+    font-family: 'Lato', sans-serif!important;
+}
+.font-bigger{
+    font-size: 1.9em!important;
+}
+
+.holder {
+    color: #fff;
+    font-family: "Source Sans Pro", Arial, sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+.holder span {
+    position: relative;
+}
+.holder span:before,
+.holder span:after {
+    position: absolute;
+    top: 49%;
+    width: 100px;
+    height: 2px;
+    background: #fff;
+    content: '';
+}
+.holder span:before {
+    left: -110px;
+}
+.holder span:after {
+    right: -110px;
+}
+@media screen and (max-width: 768px) {
+    .holder {
+        letter-spacing: 2px;
+    }
+    .holder span {
+        position: relative;
+    }
+
+    .holder span:before,
+    .holder span:after {
+        width: 50px;
+        height: 2px;
+    }
+    .holder span:before {
+        left: -60px;
+    }
+    .holder span:after {
+        right: -60px;
+    }
+}
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}

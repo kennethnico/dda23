@@ -1,0 +1,79 @@
+a{
+    text-decoration: none;
+}
+#whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right:10px;
+    z-index: 999!important;
+}
+svg#mySVG {
+    width: 80px;
+    display: inline-block;
+    vertical-align: middle;
+    filter: drop-shadow(0 1px 4px rgba(0,0,0,.4));
+}
+circle {
+    fill: #05c8f7;
+}
+circle:hover{
+    fill: #FFF;
+}
+path#svg_2 {
+    fill:  #3c444c;
+}
+#whatsapp a {padding: 20px 0;}
+#whatsapp a::before {
+    content: 'Abrir en Waze';
+    font-family: "Source Sans Pro", Arial, sans-serif;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 5px 10px;
+    margin-right: 10px;
+    color: rgba(0, 0, 0, .8);
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    filter: drop-shadow(0 1px 4px rgba(0,0,0,.4));
+    transition: .3s ease;
+    opacity: 0;
+}
+#whatsapp:hover a::before {opacity: 1;}
+
+
+#myWhatsapp {
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    z-index: 999!important;
+}
+
+#svgW {
+    width: 60px;
+    display: inline-block;
+    vertical-align: middle;
+    filter: drop-shadow(0 1px 4px rgba(0,0,0,.4));
+}
+.myCircle {
+    fill: #25d366;
+}
+path.myPath {
+    fill:  #fff!important;
+    margin-right: auto!important;
+}
+#myWhatsapp a {padding: 20px 0;}
+#myWhatsapp a::before {
+    content: 'Contacto WhatsApp';
+    display: inline-block;
+    vertical-align: middle;
+    padding: 5px 10px;
+    margin-right: 10px;
+    color: rgba(0, 0, 0, .8);
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    filter: drop-shadow(0 1px 4px rgba(0,0,0,.4));
+    transition: .3s ease;
+    opacity: 0;
+}
+#myWhatsapp:hover a::before {opacity: 1;}
