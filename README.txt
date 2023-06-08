@@ -5,4 +5,4 @@ Proyecto Confirmaciones
  - Debe contar con campos de un formulario para confirmar asistencia y nutrir Directorio interno
  - Se añadió un contador de día, horas, minutos y segundos
  - Se añadió un Mapa de Gmaps
- - Se añadió un botón de WhatsApp y se cuenta con el de Waze
+ - Se añadió un botón de WhatsApp
