@@ -23,7 +23,7 @@
 .holder span:after {
     position: absolute;
     top: 49%;
-    width: 100px;
+    width: 90px;
     height: 2px;
     background: #fff;
     content: '';
