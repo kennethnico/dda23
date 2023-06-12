@@ -312,7 +312,14 @@
 			(function(){
 				emailjs.init("ZAyRzj2jgqEPUeXSX");
 			})();
-			let name = document.getElementById("name").value;
+			//let name = document.getElementById("name").value;
+			let grade = document.getElementById("grade").value=" ";
+			let firstName = document.getElementById("firstname").value=" ";
+			document.getElementById("lastname").value=" ";
+			document.getElementById("telefono").value=" ";
+			document.getElementById("extension").value=" ";
+			document.getElementById("email").value=" ";
+			document.getElementById("celular").value=" ";
 			let templateParams = {
 				from_name: name,
 				to_name: 'Keneth'
@@ -320,7 +327,13 @@
 			emailjs.send('service_l232561', 'template_4dgsdg7', templateParams)
 					.then(function(response) {
 						console.log('SUCCESS!', response.status, response.text);
-						document.getElementById("name").value=" ";
+						document.getElementById("grade").value=" ";
+						document.getElementById("firstname").value=" ";
+						document.getElementById("lastname").value=" ";
+						document.getElementById("telefono").value=" ";
+						document.getElementById("extension").value=" ";
+						document.getElementById("email").value=" ";
+						document.getElementById("celular").value=" ";
 						//document.getElementById("response-mail").textContent = "¡Gracias! Pronto estaremos en contacto.";
 						document.getElementById("confirmacionMsg").style.display='inline-block';
 						document.getElementById("myForm").style.display='none';
