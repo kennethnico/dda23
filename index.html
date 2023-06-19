@@ -313,15 +313,23 @@
 				emailjs.init("ZAyRzj2jgqEPUeXSX");
 			})();
 			//let name = document.getElementById("name").value;
-			let grade = document.getElementById("grade").value=" ";
-			let firstName = document.getElementById("firstname").value=" ";
-			let lastname = document.getElementById("lastname").value=" ";
-			let telefono = document.getElementById("telefono").value=" ";
-			let extension = document.getElementById("extension").value=" ";
-			let email =  document.getElementById("email").value=" ";
-			let celular = document.getElementById("celular").value=" ";
+			let grade = document.getElementById("grade").value;
+			let firstName = document.getElementById("firstname").value;
+			let lastname = document.getElementById("lastname").value;
+			let cargo = document.getElementById("cargo").value;
+			let telefono = document.getElementById("telefono").value;
+			let extension = document.getElementById("extension").value;
+			let email =  document.getElementById("email").value;
+			let celular = document.getElementById("celular").value;
 			let templateParams = {
+				from_grade: grade,
 				from_name: firstName,
+				from_lastname: lastname,
+				from_cargo: cargo,
+				from_telefono: telefono,
+				from_ext: extension,
+				from_email: email,
+				from_celular: celular,
 				to_name: 'Keneth'
 			};
 			emailjs.send('service_l232561', 'template_4dgsdg7', templateParams)
@@ -330,6 +338,7 @@
 						document.getElementById("grade").value=" ";
 						document.getElementById("firstname").value=" ";
 						document.getElementById("lastname").value=" ";
+						document.getElementById("cargo").value=" ";
 						document.getElementById("telefono").value=" ";
 						document.getElementById("extension").value=" ";
 						document.getElementById("email").value=" ";
