@@ -123,7 +123,19 @@
 					</div>
 				</div>
 			</div>
-			<div class="row animate-box">
+
+			<div class="row animate-box" id="success" style="display: none;">
+				<div class="col-lg-12 col-12">
+					<div class="col-md-12">
+						<div class="row animate-box">
+							<div class="col-md-12 section-heading text-center svg-sm colored" style="font-family: 'Satisfy', cursive, Arial, sans-serif; color: #FFF; padding-bottom: 10px!important;">
+								<span class="datewed">¡Gracias por Confirma tu asistencia!</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row animate-box" id="formB">
 				<div class="col-lg-12 col-12">
 					<form class="form-inline font_Source" id="myForm">
 						<!--
@@ -335,6 +347,8 @@
 			emailjs.send('service_l232561', 'template_4dgsdg7', templateParams)
 					.then(function(response) {
 						console.log('SUCCESS!', response.status, response.text);
+						document.getElementById("formB").style.display= "none";
+						document.getElementById("success").style.display = "inline-block";
 						document.getElementById("grade").value=" ";
 						document.getElementById("firstname").value=" ";
 						document.getElementById("lastname").value=" ";
