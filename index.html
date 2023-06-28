@@ -335,7 +335,8 @@
 	<script>
 		function confirmacion(){
 			(function(){
-				emailjs.init("ZAyRzj2jgqEPUeXSX");
+				//emailjs.init("ZAyRzj2jgqEPUeXSX");
+				emailjs.init("hJtH73DZxd0SlS4iC");
 			})();
 			//let name = document.getElementById("name").value;
 			let grade = document.getElementById("grade").value;
@@ -357,7 +358,8 @@
 				from_celular: celular,
 				to_name: 'Keneth'
 			};
-			emailjs.send('service_l232561', 'template_4dgsdg7', templateParams)
+			//emailjs.send('service_l232561', 'template_4dgsdg7', templateParams)
+			emailjs.send('service_6dkjyyk', 'template_ow28v2k', templateParams)
 					.then(function(response) {
 						console.log('SUCCESS!', response.status, response.text);
 						document.getElementById("myForm").style.display= "none";
